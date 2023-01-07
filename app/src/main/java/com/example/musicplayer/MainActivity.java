@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
         Cursor cursor = getContentResolver().query(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, projection, selection, null, null);
         this.mp3s = new MP3[cursor.getCount()];
         int index = 0;
-        //Iterating over the results
+        //Iterating over the resultss
         while (cursor.moveToNext()){
 
             String songName = cursor.getString(0);
