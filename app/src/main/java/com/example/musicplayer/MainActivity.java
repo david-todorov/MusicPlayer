@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
 
             String path = cursor.getString(4);
 
-            //Adding new MP3 to the collectionn
+            //Adding new MP3 to the collection
             this.mp3s[index] = new MP3(artistName, songName, albumName, cover, id, path);
             index++;
         }
