@@ -18,6 +18,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -122,6 +123,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     synchronized private void loadSongs() {
 
         //Creating the projection
@@ -177,9 +179,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
+
     @Override
-    protected void onPause() {
-        super.onPause();
+    protected void onStop() {
+        super.onStop();
+
 
         SharedPreferences prefs = getPreferences(Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
