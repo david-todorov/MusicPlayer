@@ -1,1 +1,1 @@
-Music Player written in java
+This application is developed in Android Studio.
