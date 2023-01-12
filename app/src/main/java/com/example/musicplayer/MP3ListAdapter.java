@@ -48,10 +48,6 @@ public class MP3ListAdapter extends BaseAdapter {
         TextView names = (TextView) view.findViewById(R.id.songName_view_in_song_list);
         names.setText(this.mp3s[i].getSongName());
 
-        TextView ids = (TextView) view.findViewById(R.id.list_item_id);
-        ids.setText(this.mp3s[i].getId()+"");
-
-
         ImageView cover = (ImageView) view.findViewById(R.id.icon_view_in_song_list);
         cover.setImageBitmap(this.mp3s[i].getCover());
 

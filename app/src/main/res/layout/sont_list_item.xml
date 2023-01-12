@@ -18,10 +18,5 @@
         android:layout_gravity="center"
         android:textColor="#000"
         android:textStyle="bold|normal"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:id="@+id/list_item_id"/>
 
 </LinearLayout>
